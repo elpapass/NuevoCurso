@@ -24,13 +24,14 @@ public class LagrimasDeCocodrilo {
             }
         } while (nombresAnimales.size() < numeroAnimal);
 
-
-        int contLlorones = 0; // Este contador me sirve para contar solo los nombres de los animales con un número de vocales superior 1, incluyendo repetidos
+        // Este valor me sirve para contar solo los nombres de los animales con un número de vocales en concreto incluyendo repetidos
+        int contLlorones = 0;
 
         for (String nombreAnimal : nombresAnimales) {
             int numeroVocales = contarVocal(nombreAnimal);
             System.out.println("El nombre " + nombreAnimal + " tiene " + numeroVocales + " vocales.");
 
+            //Esto lo he realizado para restringir las palabras de 2 vocales o más diferentes incluyendo repetidos
             if (numeroVocales >= 2 && numeroVocales < 3) {
                 contLlorones++;
             }
