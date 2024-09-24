@@ -12,6 +12,9 @@ public class LagrimasDeCocodrilo {
 
         System.out.println("Introduce un numero de animales: ");
         numeroAnimal = tc.nextInt();
+        if (numeroAnimal <= 50) {
+
+        }
         tc.nextLine();
         System.out.println("Introduce un nombre de un animal: ");
         System.out.println("Num Animales: " + numeroAnimal);
@@ -29,10 +32,10 @@ public class LagrimasDeCocodrilo {
 
         for (String nombreAnimal : nombresAnimales) {
             int numeroVocales = contarVocal(nombreAnimal);
-            System.out.println("El nombre " + nombreAnimal + " tiene " + numeroVocales + " vocales.");
+            System.out.println("La palabra " + nombreAnimal + " tiene " + numeroVocales + " vocales.");
 
             //Esto lo he realizado para restringir las palabras de 2 vocales o más diferentes incluyendo repetidos
-            if (numeroVocales >= 2 && numeroVocales < 3) {
+            if (numeroVocales == 2 ) {
                 contLlorones++;
             }
         }
